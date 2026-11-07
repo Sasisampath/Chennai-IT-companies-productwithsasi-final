@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>Chennai IT Companies — Part 1 + Part 2 | productwithsasi</title>
+  <meta name="description" content="Explore Chennai IT companies with official careers links, LinkedIn profiles and recruiter searches. Featuring Ford, BNY, Verizon, Citi, Comcast and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chennai IT Companies — Part 1 + Part 2 | productwithsasi">
+  <meta property="og:description" content="Explore Chennai IT companies with official careers links, LinkedIn profiles and recruiter searches. Featuring Ford, BNY, Verizon, Citi, Comcast and more.">
+  <meta property="og:site_name" content="productwithsasi">
+  <meta property="og:image" content="/assets/cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Chennai IT Companies directory, Part 1 + Part 2, by productwithsasi">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chennai IT Companies — Part 1 + Part 2 | productwithsasi">
+  <meta name="twitter:description" content="Official careers links, company LinkedIn profiles and recruiter searches for Chennai IT companies.">
+  <meta name="twitter:image" content="/assets/cover.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="companies.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#directory">Skip to company directory</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="productwithsasi home">
+        <img class="avatar" src="assets/profile.webp" width="40" height="40" alt="">
+        <span class="brand-name">productwithsasi</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#directory">Companies</a>
+        <a href="#guide">How to apply</a>
+        <a href="https://www.instagram.com/productwithsasi/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">CHENNAI IT COMPANIES DIRECTORY</p>
+        <h1 id="hero-title">More companies.<br><span>More opportunities to explore.</span></h1>
+        <p class="hero-sub">Discover Chennai IT companies, including five new additions from Part 2. Explore official career pages, company LinkedIn profiles and recruiter searches in one place.</p>
+        <div class="hero-ctas">
+          <a href="#new" class="btn btn-primary">Explore new companies <span aria-hidden="true">→</span></a>
+          <a href="#directory" class="btn btn-outline">View complete directory</a>
+        </div>
+        <p class="hero-count"><strong id="hero-count">11</strong> companies · Part 1 + Part 2</p>
+      </div>
+    </section>
+
+    <section class="directory" id="directory" aria-label="Company directory">
+      <div class="container">
+        <div class="filters" role="search" aria-label="Find companies">
+          <label class="search-wrap" for="search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.9" cy="10.9" r="6.9" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="visually-hidden">Search companies or skills</span>
+            <input id="search" type="search" placeholder="Search company, skill or role" autocomplete="off" enterkeyhint="search" spellcheck="false">
+          </label>
+          <div class="chips" role="group" aria-label="Filter by role area">
+            <button type="button" class="chip active" data-filter="All" aria-pressed="true">All roles</button>
+            <button type="button" class="chip" data-filter="Development" aria-pressed="false">Development</button>
+            <button type="button" class="chip" data-filter="QA & Testing" aria-pressed="false">QA &amp; Testing</button>
+            <button type="button" class="chip" data-filter="Cloud" aria-pressed="false">Cloud</button>
+            <button type="button" class="chip" data-filter="Data & ERP" aria-pressed="false">Data &amp; ERP</button>
+          </div>
+          <div class="list-meta"><span id="results-count" aria-live="polite">Showing 11 companies</span><button type="button" id="reset-filters" class="reset-link" hidden>Clear filters</button></div>
+        </div>
+
+        <noscript><p class="noscript">Please enable JavaScript to view the company list.</p></noscript>
+
+        <section class="group group-new" id="new" aria-labelledby="new-title">
+          <span class="section-label">NEW IN PART 2</span>
+          <h2 id="new-title">5 more companies worth exploring.</h2>
+          <p class="group-sub">Explore the companies featured in the latest Reel and visit their official careers pages.</p>
+          <div id="list-new" class="grid"></div>
+        </section>
+
+        <section class="group" id="part1" aria-labelledby="part1-title">
+          <span class="section-label">ALSO FROM PART 1</span>
+          <h2 id="part1-title">Missed Part 1? Explore these companies too.</h2>
+          <p class="group-sub">Here are more companies and career resources worth exploring.</p>
+          <div id="list-old" class="grid"></div>
+        </section>
+
+        <div id="empty-state" class="empty-state" hidden>
+          <h3>No companies found</h3>
+          <p>Try another company name, skill or role area, or clear the filters.</p>
+          <button type="button" id="clear-filters" class="btn btn-outline">Clear filters</button>
+        </div>
+
+        <aside class="disclaimer" aria-label="Disclaimer"><p><strong>Please note:</strong> This is an independent career-information directory, not a confirmed hiring announcement. Roles shown are career areas to explore, not confirmed vacancies. Job openings and eligibility change, so verify everything on each company's official careers website. Recruiter links open LinkedIn searches, not verified individual recruiter profiles.</p></aside>
+      </div>
+    </section>
+
+    <section class="guide" id="guide" aria-labelledby="guide-title">
+      <div class="container">
+        <span class="section-label">HOW TO APPLY</span>
+        <h2 id="guide-title">A better way to apply.</h2>
+        <p class="group-sub">Three small steps before you send that application.</p>
+        <ol class="steps">
+          <li><span class="step-no">1</span><h3>Find a relevant role</h3><p>Open the careers page. Filter for Chennai, your skills and your experience level.</p></li>
+          <li><span class="step-no">2</span><h3>Find the right person</h3><p>Use the LinkedIn recruiter search to find people in talent acquisition. Verify their employer before reaching out.</p></li>
+          <li><span class="step-no">3</span><h3>Send a specific message</h3><p>Share the role link, why your experience fits and one strong example of your work. Keep it short.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="container faq-inner">
+        <h2 id="faq-title">Good to know.</h2>
+        <details><summary>Are these companies hiring right now?</summary><p>Not necessarily. We share companies worth researching. Live vacancies, eligibility and deadlines change, so confirm details on each company's official careers website before applying.</p></details>
+        <details><summary>Are these direct HR contacts?</summary><p>“Find recruiters” opens a LinkedIn search for relevant public profiles. These are search results, not verified HR contacts or guaranteed referrals. Never pay anyone to secure an interview.</p></details>
+        <details><summary>Can freshers use this list?</summary><p>Yes, as a starting point. Check each company's student, graduate or entry-level hiring channels. Not all companies have fresher roles open at all times.</p></details>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="container">
+        <h2 id="closing-title">More career resources coming soon.</h2>
+        <p>More company discoveries, career guides and opportunities for job seekers.</p>
+        <a class="btn btn-primary" href="https://www.instagram.com/productwithsasi/" target="_blank" rel="noopener noreferrer">Follow @productwithsasi <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><strong>productwithsasi</strong><p>Independent directory. Not affiliated with the listed companies.</p></div></footer>
+
+  <div class="sticky-follow"><a id="sticky-follow-button" href="https://www.instagram.com/productwithsasi/" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.8" cy="6.4" r="1.1" fill="currentColor"/></svg><span>Follow @productwithsasi</span></a></div>
+</body>
+</html>
