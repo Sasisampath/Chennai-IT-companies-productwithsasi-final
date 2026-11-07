@@ -15,14 +15,12 @@ h1,h2,h3{margin:0}
 .skip-link:focus{top:10px}
 
 /* header */
-.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
-.brand{display:flex;align-items:center;gap:10px;min-width:0}
-.avatar{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:50% 38%;transform:scale(1.12);border:0;display:block;background:var(--soft);box-shadow:0 0 0 1px var(--line)}
-.brand{overflow:hidden}
-.avatar{clip-path:circle(50%)}
-.brand-name{font-weight:700;font-size:16px;letter-spacing:-.01em;line-height:40px;white-space:nowrap}
-.nav{display:flex;align-items:center;gap:4px;font-size:14px;font-weight:600;color:var(--muted)}
+.site-header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;height:66px}
+.brand{display:flex;align-items:center;gap:11px;min-width:0}
+.avatar{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:50% 50%;display:block;border:1px solid var(--line);background:var(--soft)}
+.brand-name{font-weight:650;font-size:17px;letter-spacing:0;line-height:1.2;color:#111827;white-space:nowrap}
+.nav{display:flex;align-items:center;gap:2px;white-space:nowrap;flex:none;font-size:14px;font-weight:600;color:var(--muted)}
 .nav a{padding:10px 10px;border-radius:8px}
 .nav a:hover{color:var(--blue);background:var(--soft)}
 
@@ -124,11 +122,14 @@ h1,h2,h3{margin:0}
 .sticky-follow a{pointer-events:auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;background:var(--blue);color:#fff;font-weight:700;font-size:15px;box-shadow:0 4px 14px rgba(10,102,194,.28)}
 .sticky-follow a:hover{background:var(--blue-h)}
 
-@media (max-width:440px){
-  .header-inner{flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:4px;row-gap:0}
-  .nav{width:100%;gap:0;margin-left:-8px;white-space:nowrap}
-  .nav a{padding:10px 8px;font-size:13.5px}
-  html{scroll-padding-top:100px}
+@media (max-width:540px){
+  .header-inner{flex-wrap:wrap;height:auto;gap:0;padding-top:8px;padding-bottom:0}
+  .brand{gap:10px}
+  .avatar{width:36px;height:36px}
+  .brand-name{font-size:16px}
+  .nav{width:100%;gap:0;font-size:13.5px;margin-left:-8px}
+  .nav a{padding:8px 8px;min-height:38px;display:flex;align-items:center}
+  html{scroll-padding-top:96px}
 }
 @media (max-width:359px){
   .actions-row{grid-template-columns:1fr}
